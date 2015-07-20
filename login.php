@@ -5,7 +5,7 @@ include_once('config/config.php');
 <html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
-	<title>Login</title>
+	<title>MDIAS :: Sistema de Agendamento de Reuniões</title>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 
     <script type="text/javascript">
