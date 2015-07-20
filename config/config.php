@@ -8,7 +8,7 @@ date_default_timezone_set("Brazil/East");
 // DEFININDO OS DADOS DE ACESSO AO BANCO DE DADOS
 define("DB", 'mysql');
 define("DB_HOST", "localhost");
-define("DB_NAME", "");
+define("DB_NAME", "reuniao");
 define("DB_USER", "root");
 define("DB_PASS", "root");
 
