@@ -1,0 +1,4 @@
+html, body{ margin: 0; padding: 0; border:solid 1px red; height: 100%;}
+fieldset{ border: solid 1px red; height: 50%; width: 50%; margin-top: 15%; margin-left: 25%;}
+fieldset  input{ border: solid 1px red;  font-family: arial, sans-serif; font-size: 16px; border-radius: 3px;}
+fieldset label input { border: solid 1px red; font-family: arial, sans-serif; font-size: 14px;}
