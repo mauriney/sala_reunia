@@ -6,12 +6,12 @@ $msg = "";
 
 try {
 	//PEGAR DADOS DE LOGIN
-	$nome 	= strip_tags($_POST['nome']);
+	$nome 	= strip_tags($_POST['login']);
 	$senha 	= strip_tags($_POST['senha']);
 	//SQL PARA VERIFICAR LOGIN EXISTENTE
-	$result = $db->prepare("SELECT nome, senha
+	$result = $db->prepare("SELECT login, senha
 							FROM usuario");
-	$result->bindParam('nome', $nome);
+	$result->bindParam('login', $login);
 	$result->execute();
 	$num	= $result->rowCount();
 
@@ -29,7 +29,7 @@ try {
 				$_SESSION['timeout']	= time();
 				//CRIAR AS SESSÕES DO USUÁRIO
 				$_SESSION['id']			= $id;
-				$_SESSION['nome']		= $dadosUsuario['nome'];
+				$_SESSION['login']		= $dadosUsuario['login'];
 				//STATUS ONLINE -> 1 - ONLINE e 2 - OFFLINE
 				$_SESSION['online']		= 1;
 				//ATUALIZANDO O STATUS ONLINE DO USUARIO
